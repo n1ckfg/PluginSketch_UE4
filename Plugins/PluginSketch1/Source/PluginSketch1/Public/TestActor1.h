@@ -26,6 +26,9 @@ public:
 	UPROPERTY(EditAnywhere)
 	FString meshFilePath;
 
+	UPROPERTY(EditAnywhere)
+	int numActors = 10;
+
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 

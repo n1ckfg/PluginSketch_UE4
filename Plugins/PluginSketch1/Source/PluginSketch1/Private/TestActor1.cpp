@@ -19,7 +19,10 @@ void ATestActor1::BeginPlay()
 
 	loadMesh(meshFilePath);
 
-	AActor* blimp = GetWorld()->SpawnActor(BP_Blimp);
+	for (int i = 0; i < numActors; i++)
+	{
+		AActor* blimp = GetWorld()->SpawnActor(BP_Blimp);
+	}
 }
 
 // Called every frame
